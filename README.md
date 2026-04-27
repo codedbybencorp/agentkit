@@ -96,6 +96,31 @@ Your Agent → HTTP + X-API-Key → AgentKit
 | `AGENTKIT_API_KEYS` | `test-key-123` | Comma-separated valid API keys |
 | `AGENTKIT_DATA` | `.data` | Persistent data directory |
 
+## Monetization Model
+
+AgentKit is designed to be both self-hosted (free) and hosted (paid):
+
+| Tier | Price | Limits |
+|------|-------|--------|
+| **Self-Hosted** | Free | Your own hardware |
+| **Starter** | $19/mo | 10K requests/mo + email support |
+| **Pro** | $49/mo | 100K requests/mo + priority + custom tools |
+| **Enterprise** | $199/mo | Unlimited + dedicated infra + SLA |
+
+**Why agents pay for this:**
+- Building web search + memory + sandbox yourself takes weeks
+- Agents need reliable infrastructure, not DIY scripts
+- Per-request billing aligns with agent usage patterns
+- Multi-agent memory sharing unlocks team workflows
+
+## What's Next
+
+- [ ] Stripe billing with usage-based pricing
+- [ ] MCP (Model Context Protocol) server wrapper
+- [ ] Agent dashboard (view usage, manage keys, inspect memory)
+- [ ] WebSocket streaming for real-time research
+- [ ] Scheduled research jobs (cron for agents)
+
 ## License
 
 MIT
